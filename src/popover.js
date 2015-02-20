@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
 
 var React = require('react/addons');
-var Tether = require('tether');
+var Tether = require('../node_modules/tether/tether.js');
 
 var Popover = React.createClass({
   displayName: 'Popover',
