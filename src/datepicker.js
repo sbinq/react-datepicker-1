@@ -36,7 +36,7 @@ var DatePicker = React.createClass({
   },
 
   setSelected: function(date) {
-    this.props.onChange(date.moment());
+    this.props.onChange(date ? date.moment() : null);
   },
 
   onInputClick: function() {

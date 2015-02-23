@@ -22,7 +22,7 @@ var Calendar = React.createClass({
     // When the selected date changed
     if (nextProps.selected !== this.props.selected) {
       this.setState({
-        date: new DateUtil(nextProps.selected).clone()
+        date: new DateUtil(nextProps.selected).safeClone(moment())
       });
     }
   },
