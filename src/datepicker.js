@@ -20,7 +20,7 @@ var DatePicker = React.createClass({
   },
 
   handleBlur: function() {
-    this.hideCalendar();
+    //this.hideCalendar(); // TODO: this breaks stuff when clicking on popup
   },
 
   hideCalendar: function() {
