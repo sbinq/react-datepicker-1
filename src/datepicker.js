@@ -19,6 +19,10 @@ var DatePicker = React.createClass({
     });
   },
 
+  handleBlur: function() {
+    this.hideCalendar();
+  },
+
   hideCalendar: function() {
     setTimeout(function() {
       this.setState({
@@ -69,6 +73,7 @@ var DatePicker = React.createClass({
           dateFormat={this.props.dateFormat}
           focus={this.state.focus}
           onFocus={this.handleFocus}
+          onBlur={this.handleBlur}
           handleClick={this.onInputClick}
           handleEnter={this.hideCalendar}
           setSelected={this.setSelected}
